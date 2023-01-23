@@ -31,11 +31,10 @@
             "hotel": "Hilton Los Angeles",
             "restaurant":"Bestia",
             "likes":0
-        },
-    ]
-}
-{
-    "international" [
+        }
+    ],
+
+    "international": [
         {
             "location": "Jamaica",
             "image": "https://www.honeymoonalways.com/wp-content/uploads/2020/11/Sandals-Royal-Caribbean_Over-the-Water-Villas-and-Bungalows.jpg" ,
@@ -67,7 +66,7 @@
             "hotel": "Grand Hotel",
             "restaurant":"Sturehof",
             "likes": 0
-        }
+        },
         {
             "location": "Maldives",
             "image": "https://media-cdn.tripadvisor.com/media/photo-s/1c/ba/24/6f/aerial-photo-of-lily.jpg",

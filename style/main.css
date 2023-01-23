@@ -21,3 +21,28 @@ body {
 span {
     color: var(--primary-color);
 }
+
+nav {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: black;
+    height: 100vh;
+    padding: 1em;
+  }
+
+  nav.menu-btn {
+    display: block;
+  }
+
+  .container{
+    display: flex;
+    place-content: space-between;
+}
+
+.Open-menu {
+    cursor: pointer;
+}
