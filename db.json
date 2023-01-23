@@ -1,0 +1,80 @@
+{
+    "domestic": [
+        {
+            "location": "Miami",
+            "image": "https://img1.wsimg.com/isteam/ip/66e3a1f0-5d45-41db-b064-30bbfeb95803/84D28A75-420F-470D-92B3-0F07ED988089.jpeg/:/cr=t:7.63%25,l:7.63%25,w:84.75%25,h:84.75%25/rs=w:700,cg:true,m",
+            "activity": "Jet Skiing",
+            "hotel": "Nobu Hotel Miami Beach",
+            "restaurant": "Stubborn Seed",
+            "likes": 0
+        },
+        {
+            "location": "Las Vegas",
+            "image": "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg" ,
+            "activity": "Tour the strip",
+            "hotel": "Bellagio Hotel and Casino",
+            "restaurant": "Bazaar Meat by Jose Andres",
+            "likes": 0
+        },
+        {
+            "location": "Hawaii",
+            "image": "https://lp-cms-production.imgix.net/2022-04/Diamond%20Head%2C%20Oahu%2C%20Hawaii.jpg",
+            "activity": "Snorkeling",
+            "hotel": "Hyatt Regency Maui Resort and Spa",
+            "restaurant": "Mama's Fish House (Maui)",
+            "likes":0
+        },
+        {
+            "location": "Los Angeles",
+            "image": "https://www.expedia.com/Hollywood-Sign-Hollywood-Hills.d6068489.Vacation-Attraction?pwaDialog=gallery-open",
+            "activity": "Universal Studios Hollywood",
+            "hotel": "Hilton Los Angeles",
+            "restaurant":"Bestia",
+            "likes":0
+        },
+    ]
+}
+{
+    "international" [
+        {
+            "location": "Jamaica",
+            "image": "https://www.honeymoonalways.com/wp-content/uploads/2020/11/Sandals-Royal-Caribbean_Over-the-Water-Villas-and-Bungalows.jpg" ,
+            "activity": "Dunn's River Falls and Park",
+            "hotel":"Sandals Ochi",
+            "restaurant": "Zimbali's Mountain Cooking",
+            "likes": 0 
+        },
+        {
+            "location": "Greece",
+            "image": "https://tripmasters-pictures.s3.amazonaws.com/images/asst/1010/vss_-_santorini_-_blue_domed_church_of_oia_-894053-500.jpg",
+            "activity": "Cruises",
+            "hotel":"Magma Resort Santorini" ,
+            "restaurant": "Athenian House",
+            "likes": 0
+        },
+        {
+            "location": "Dubai",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwDbvfOGjxsM_g4q3vogS8uXmayrIJFA9pjCc_rjTaqNXS41Uq_HFFEFfsodcDt1pwUvY&usqp=CAU",
+            "activity": "Desert Safari",
+            "hotel":"Four Seasons Resort Dubai" ,
+            "restaurant":"Tribes",
+            "likes": 0
+        },
+        {
+            "location": "Sweden",
+            "image": "https://blog.goway.com/globetrotting/wp-content/uploads/2016/08/Old-Town-Gamla-Stan-architecture-pier-in-Stockholm-Sweden_1.jpg" ,
+            "activity": "Vasa Museum",
+            "hotel": "Grand Hotel",
+            "restaurant":"Sturehof",
+            "likes": 0
+        }
+        {
+            "location": "Maldives",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/1c/ba/24/6f/aerial-photo-of-lily.jpg",
+            "activity": "Beaches",
+            "hotel": "Soneva Fushi",
+            "restaurant":"Ithaa Undersea Restaurant",
+            "likes": 0
+        }
+    ]
+}
