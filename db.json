@@ -6,7 +6,8 @@
             "activity": "Jet Skiing",
             "hotel": "Nobu Hotel Miami Beach",
             "restaurant": "Stubborn Seed",
-            "likes": 0
+            "likes": 0,
+            "comments": "Jet Skiing in Miami is the best!"
         },
         {
             "location": "Las Vegas",
@@ -14,7 +15,8 @@
             "activity": "Tour the strip",
             "hotel": "Bellagio Hotel and Casino",
             "restaurant": "Bazaar Meat by Jose Andres",
-            "likes": 0
+            "likes": 0,
+            "comments": "What happens in Vegas, Stays in Vegas!"
         },
         {
             "location": "Hawaii",
@@ -22,7 +24,8 @@
             "activity": "Snorkeling",
             "hotel": "Hyatt Regency Maui Resort and Spa",
             "restaurant": "Mama's Fish House (Maui)",
-            "likes":0
+            "likes":0,
+            "comments": "You gotta check out the culture"
         },
         {
             "location": "Los Angeles",
@@ -30,19 +33,20 @@
             "activity": "Universal Studios Hollywood",
             "hotel": "Hilton Los Angeles",
             "restaurant":"Bestia",
-            "likes":0
-        },
-    ]
-}
-{
-    "international" [
+            "likes":0,
+            "comments": ""
+        }
+    ],
+
+    "international": [
         {
             "location": "Jamaica",
             "image": "https://www.honeymoonalways.com/wp-content/uploads/2020/11/Sandals-Royal-Caribbean_Over-the-Water-Villas-and-Bungalows.jpg" ,
             "activity": "Dunn's River Falls and Park",
             "hotel":"Sandals Ochi",
             "restaurant": "Zimbali's Mountain Cooking",
-            "likes": 0 
+            "likes": 0,
+            "comments":""
         },
         {
             "location": "Greece",
@@ -50,7 +54,8 @@
             "activity": "Cruises",
             "hotel":"Magma Resort Santorini" ,
             "restaurant": "Athenian House",
-            "likes": 0
+            "likes": 0,
+            "comments":""
         },
         {
             "location": "Dubai",
@@ -58,7 +63,8 @@
             "activity": "Desert Safari",
             "hotel":"Four Seasons Resort Dubai" ,
             "restaurant":"Tribes",
-            "likes": 0
+            "likes": 0,
+            "comments":""
         },
         {
             "location": "Sweden",
@@ -66,15 +72,16 @@
             "activity": "Vasa Museum",
             "hotel": "Grand Hotel",
             "restaurant":"Sturehof",
-            "likes": 0
-        }
+            "likes": 0,
+            "comments":""
+        },
         {
             "location": "Maldives",
             "image": "https://media-cdn.tripadvisor.com/media/photo-s/1c/ba/24/6f/aerial-photo-of-lily.jpg",
             "activity": "Beaches",
             "hotel": "Soneva Fushi",
             "restaurant":"Ithaa Undersea Restaurant",
-            "likes": 0
+            "likes": 0,
+            "comments": "An absolute DREAM"
         }
-    ]
-}
+    ]}
