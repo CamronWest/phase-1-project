@@ -44,16 +44,9 @@ function renderTravel(cards){
 
         info.append(h2, img, p, p2, p3)
         cardsList.append(info)
+        renderLikes();
 
     })
-}
-let likes;
-document.getElementById('like-button').addEventListener('click', () => {
-    likes += 1;
-    renderLikes();
-
-function renderLikes(){ 
-    document.getElementById("like-count").textContent = `${likes} likes`;
 }
 
 
