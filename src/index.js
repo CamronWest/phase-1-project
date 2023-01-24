@@ -22,23 +22,21 @@ function renderTravel(cards){
     cards.forEach((card) => {
         const cardsList = document.querySelector('#cards')
         const info= document.createElement('div')
-        card.className = 'card'
+        info.className = 'card'
 
         const h2 = document.createElement('h2')
         h2.textContent = card.location
-       
 
         const img = document.createElement('img')
         img.src = card.image
         img.className = 'img'
 
         const p = document.createElement('p')
-        p.textContent = `Top Rated Actiity: ${card.activity}`
+        p.textContent = `Top Rated Activity: ${card.activity}`
         
 
         const p2 = document.createElement('p')
         p2.textContent = `Five Star Hotel: ${card.hotel}`
-     
 
         const p3 = document.createElement('p')
         p3.textContent = `Favorite Restaurant: ${card.restaurant}`
