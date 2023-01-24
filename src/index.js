@@ -26,7 +26,6 @@ function renderTravel(cards){
 
         const h2 = document.createElement('h2')
         h2.textContent = card.location
-       
 
         const img = document.createElement('img')
         img.src = card.image
@@ -38,7 +37,6 @@ function renderTravel(cards){
 
         const p2 = document.createElement('p')
         p2.textContent = `Five Star Hotel: ${card.hotel}`
-     
 
         const p3 = document.createElement('p')
         p3.textContent = `Favorite Restaurant: ${card.restaurant}`

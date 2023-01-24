@@ -105,7 +105,7 @@ nav .home:hover {
 }
 nav.menu-btn {
     display: block;
-  }
+}
 
 .menu {
     cursor: pointer; 
@@ -114,22 +114,22 @@ nav.menu-btn {
 }
 
 #cards {
-  margin: 2rem;
+    margin: 2rem;
 }
 
 .card {
-  text-align: center;
-  border: black solid 1px;
-  padding: 1rem;
-  width: 15rem;
-  height: 25rem;
-  display: inline-grid;
-  margin: 1rem 2rem;
-  box-shadow: 3px 4px #e04b52
+    text-align: center;
+    border: black solid 1px;
+    padding: 1rem;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #e04b52
 }
 
 .img {
-  justify-self: center;
-  height: 17rem;
-  width: 17rem;
+    justify-self: center;
+    height: 17rem;
+    width: 17rem;
 }
