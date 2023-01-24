@@ -41,9 +41,6 @@ function renderDomestic(cards) {
         const restaurant = document.querySelector("#restaurant")
         restaurant.textContent = card.restaurant
 
-
-openButton.addEventListener('click', () => {
-        nav.classList.add('menu-btn')
 })
 
 }
@@ -73,6 +70,9 @@ openButton.addEventListener('click', () => {
 //      cardsList.append(internationalCard)
 //     })
 // }
-const openButton = document.getElementById('Open-menu')
-    nav = document.querySelector('nav')
-    exitButton = document.getElementById('exit-menu');
+
+// openButton.addEventListener('click', () => {
+//     nav.classList.add('menu-btn')
+// const openButton = document.getElementById('Open-menu')
+//     nav = document.querySelector('nav')
+//     exitButton = document.getElementById('exit-menu');
