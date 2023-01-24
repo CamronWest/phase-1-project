@@ -42,9 +42,9 @@ function renderDomestic(cards) {
         restaurant.textContent = card.restaurant
 
 
-     domesticCard.append(location, img, activity, hotel, restaurant)
-     cardList.append(domesticCard)
-    })
+openButton.addEventListener('click', () => {
+        nav.classList.add('menu-btn')
+})
 
 }
 // function renderInternational(international) {
@@ -73,3 +73,6 @@ function renderDomestic(cards) {
 //      cardsList.append(internationalCard)
 //     })
 // }
+const openButton = document.getElementById('Open-menu')
+    nav = document.querySelector('nav')
+    exitButton = document.getElementById('exit-menu');
