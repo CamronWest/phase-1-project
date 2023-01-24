@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', (event) => { window.alert("choose your next vacation!"); });
+//window.addEventListener('DOMContentLoaded', (event) => { window.alert("choose your next vacation!"); });
 
 function navbarButton(){
     const openButton = document.querySelector("#menu-cta")
