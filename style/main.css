@@ -119,17 +119,24 @@ nav.menu-btn {
 
 .card {
   text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
   border: black solid 1px;
   padding: 1rem;
-  width: 15rem;
-  height: 25rem;
+  width: 20rem;
+  height: 30rem;
   display: inline-grid;
   margin: 1rem 2rem;
-  box-shadow: 3px 4px #e04b52
+  box-shadow: 3px 4px #0606da
+}
+.card:hover{
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 }
 
 .img {
   justify-self: center;
-  height: 17rem;
-  width: 17rem;
+  height: 13rem;
+  width: 13rem;
 }
