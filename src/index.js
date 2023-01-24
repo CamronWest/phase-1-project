@@ -47,6 +47,15 @@ function renderTravel(cards){
 
     })
 }
+let likes;
+document.getElementById('like-button').addEventListener('click', () => {
+    likes += 1;
+    renderLikes();
+
+function renderLikes(){ 
+    document.getElementById("like-count").textContent = `${likes} likes`;
+}
+
 
 
 
