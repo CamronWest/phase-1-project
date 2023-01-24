@@ -9,7 +9,7 @@ body {
     background: #f2f2f2;
     margin: 0;
     font-family: 'Poppins';
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.jetsetter.com//uploads/sites/7/2018/04/sjeL0BSe-1380x690.jpeg');
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://thumbs.dreamstime.com/b/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C-153419622.jpg');
 }
 
 
@@ -125,7 +125,6 @@ nav.menu-btn {
     height: 25rem;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px #e04b52
 }
 
 .img {
