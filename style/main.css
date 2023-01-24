@@ -10,6 +10,9 @@ body {
     margin: 0;
     font-family: 'Poppins';
     background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.jetsetter.com//uploads/sites/7/2018/04/sjeL0BSe-1380x690.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 
@@ -48,11 +51,12 @@ nav {
     display: none;
     position: fixed;
     z-index: 5;
-    width: 20%;
+    width: 17%;
     right: 0;
     top: 0;
-    background: #20272E;
-    height: 100vh;
+    border-radius: 30px;
+    background: rgb(46, 43, 43);
+    height: 22vh;
     padding: 1em;
 }
 nav ul.primary-nav {
