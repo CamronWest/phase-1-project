@@ -13,12 +13,32 @@ body {
 }
 
 
-.logo {
+.navbar {
+    background: white;
+    padding: 1em;
+  }
+  
+  .navbar .logo {
     text-decoration: none;
     font-weight: bold;
     color: black;
     font-size: 1.2em;
-}
+  }
+  
+  .navbar .logo span {
+    color: var(--primary-color);
+  }
+  
+  .navbar nav {
+    display: none;
+  }
+  
+  .navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: space-between;
+  }
 
 span {
     color: var(--primary-color);
@@ -27,62 +47,34 @@ span {
 nav {
     display: none;
     position: fixed;
-    z-index: 999;
-    width: 66%;
+    z-index: 5;
+    width: 25%;
     right: 0;
     top: 0;
-    background: black;
+    background: #20272E;
     height: 100vh;
     padding: 1em;
 }
-
-nav.menu-btn {
+nav ul.primary-nav {
+    margin-top: 5em;
+    list-style: none;
+  }
+  
+  nav li a {
+    color: white;
+    text-decoration: none;
     display: block;
-}
-
-.container{
-    display: flex;
-    place-content: space-between;
-}
-
-.Open-menu {
-    cursor: pointer;
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
-
-:root {
-    --primary-color:  blue;
-}
-
-
-body {
-    background: #f2f2f2;
+    padding: .5em;
+    font-size: 1.3em;
+    text-align: right;
     margin: 0;
-    font-family: 'Poppins';
-}
-
-.logo {
-    text-decoration: none;
+    padding: 0;
+  }
+  
+  nav li a:hover {
     font-weight: bold;
-    color: black;
-    font-size: 1.2em;
-}
-
-span {
-    color: var(--primary-color);
-}
-
-nav {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    width: 66%;
-    right: 0;
-    top: 0;
-    background: black;
-    height: 100vh;
-    padding: 1em;
-}
-
+  }
+  
 nav.menu-btn {
     display: block;
 }
@@ -94,4 +86,29 @@ nav.menu-btn {
 
 .Open-menu {
     cursor: pointer;
+}
+
+.home {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    font-size: 1.3em;
+    float: left;
+    margin: .5em;
+    cursor: pointer;
+    
+}
+
+nav .home:hover {
+    font-weight: bold;
+}
+nav.menu-btn {
+    display: block;
+  }
+
+.menu {
+    cursor: pointer; 
+    display: block; 
+    
 }

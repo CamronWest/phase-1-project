@@ -9,17 +9,34 @@
     
 </head>
 <body>
-    <script  src="src/index.js"></script>
+    
     <div class="navbar">
         <div class = "container">
             <p class = "logo">Interesting<span>Locations</span></p>
 
-            <img id = "Open-menu" src="images/menu.svg" alt="open navigation">
+            <img id = "menu-cta" class = "menu"  src="images/menu.svg" alt="open navigation">
             <nav>
-                <img id = "exit-menu" src="images/exit.svg" alt="closed navigation">
+
+                <a class = "home" href="index.html">Home</a>
+                <ul class="primary-nav">
+                    <li><a href="#">null</a></li>
+                    <li><a href="#">null</a></li>
+                    <li><a href="#">null</a></li>
+                    <li><a href="#">null</a></li>
+                </ul>
             </nav>
         </div>
-    
+    </div>
+
+    <script>
+        
+const openButton = document.querySelector("#menu-cta")
+    nav = document.querySelector('nav');
+
+openButton.addEventListener('click', () => {
+        nav.classList.add('menu-btn')
+})
+    </script>
 </body>
 </html>
 

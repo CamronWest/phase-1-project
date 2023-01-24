@@ -33,12 +33,7 @@
             "activity": "Universal Studios Hollywood",
             "hotel": "Hilton Los Angeles",
             "restaurant":"Bestia",
-<<<<<<< HEAD
-            "likes":0,
-            "comments": ""
-=======
             "likes":0
->>>>>>> 04f6596cb1813beaf793334a6919d3c129648210
         }
     ],
 
@@ -76,12 +71,7 @@
             "activity": "Vasa Museum",
             "hotel": "Grand Hotel",
             "restaurant":"Sturehof",
-<<<<<<< HEAD
-            "likes": 0,
-            "comments":""
-=======
             "likes": 0
->>>>>>> 04f6596cb1813beaf793334a6919d3c129648210
         },
         {
             "location": "Maldives",
