@@ -1,6 +1,7 @@
 {
     "domestic": [
         {
+            "id":1,
             "location": "Miami",
             "image": "https://img1.wsimg.com/isteam/ip/66e3a1f0-5d45-41db-b064-30bbfeb95803/84D28A75-420F-470D-92B3-0F07ED988089.jpeg/:/cr=t:7.63%25,l:7.63%25,w:84.75%25,h:84.75%25/rs=w:700,cg:true,m",
             "activity": "Jet Skiing",
@@ -10,6 +11,7 @@
             "comments": "Jet Skiing in Miami is the best!"
         },
         {
+            "id": 2,
             "location": "Las Vegas",
             "image": "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg" ,
             "activity": "Tour the strip",
@@ -19,6 +21,7 @@
             "comments": "What happens in Vegas, Stays in Vegas!"
         },
         {
+            "id":3,
             "location": "Hawaii",
             "image": "https://lp-cms-production.imgix.net/2022-04/Diamond%20Head%2C%20Oahu%2C%20Hawaii.jpg",
             "activity": "Snorkeling",
@@ -28,17 +31,14 @@
             "comments": "You gotta check out the culture"
         },
         {
+            "id":4,
             "location": "Los Angeles",
             "image": "https://www.expedia.com/Hollywood-Sign-Hollywood-Hills.d6068489.Vacation-Attraction?pwaDialog=gallery-open",
             "activity": "Universal Studios Hollywood",
             "hotel": "Hilton Los Angeles",
             "restaurant":"Bestia",
-<<<<<<< HEAD
             "likes":0,
             "comments": ""
-=======
-            "likes":0
->>>>>>> 04f6596cb1813beaf793334a6919d3c129648210
         }
     ],
 
@@ -76,12 +76,8 @@
             "activity": "Vasa Museum",
             "hotel": "Grand Hotel",
             "restaurant":"Sturehof",
-<<<<<<< HEAD
             "likes": 0,
             "comments":""
-=======
-            "likes": 0
->>>>>>> 04f6596cb1813beaf793334a6919d3c129648210
         },
         {
             "location": "Maldives",
