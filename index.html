@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Destinations!</title>
+    <title>Travel Destination!</title>
     <link rel="stylesheet" href="style/main.css">
     
 </head>
@@ -12,7 +12,8 @@
     
     <div class="navbar">
         <div class = "container">
-            <p class = "logo">Interesting<span>Locations</span></p>
+
+            <p class = "logo">Travel<span>Destinations</span></p>
 
             <img id = "menu-cta" class = "menu"  src="images/menu.svg" alt="open navigation">
             <nav>
@@ -25,18 +26,38 @@
                     <li><a href="#">null</a></li>
                 </ul>
             </nav>
+    </div>
+    </div>
+    <div class="cards">
+        <div id="domestic">
+            <script type="text/javascript" src="src/index.js"></script>
+            <h4 id=location></h4>
+            <img src="" width="200" height="200"
+            <ul style="list-style: none;"">
+                <p><b>Top Rated Activity</b></p>
+                <li id="activity"></li>
+                <p><b>Five Star Hotel</b></p>
+                <li id="hotel"></li>
+                <p><b>Favorite Restaurant</b></p>
+                <li id="restaurant"></li>
+            </ul>
         </div>
+
     </div>
 
     <script>
         
-const openButton = document.querySelector("#menu-cta")
-    nav = document.querySelector('nav');
 
-openButton.addEventListener('click', () => {
-        nav.classList.add('menu-btn')
-})
     </script>
+        <div id="international">
+            <script type="text/javascript" src="src/index.js"></script>
+        </div>
+        
+    </div>
+
+    
+    
+
 </body>
 </html>
 
