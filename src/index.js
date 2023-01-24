@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', (event) => { window.alert("choose your next vacation!"); });
+
 
 const openButton = document.getElementById('Open-menu')
     nav = document.querySelector('nav')
