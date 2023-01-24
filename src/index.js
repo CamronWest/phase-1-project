@@ -28,7 +28,7 @@ function renderDomestic(cards) {
         const location= document.querySelector("#location")
         location.textContent= card.location;
 
-        const img = document.querySelector("body > div.card > img")
+        const img = document.querySelector("#domestic > img")
         img.className = 'img'
 
 
