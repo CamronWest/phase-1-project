@@ -48,7 +48,10 @@ function renderTravel(cards){
     })
 }
 
+function addNewVacation(){
+    const form = document.querySelector('form')
 
+}
 
 
 
