@@ -12,63 +12,43 @@ navbarButton();
 
 fetch('http://localhost:3000/domestic')
 .then(res => res.json())
-.then(data => renderDomestic(data));
+.then(data => renderTravel(data));
 
-// fetch ('http://localhost:3000/international')
-// .then(res => res.json())
-// .then(data => renderInternational(data));
+fetch ('http://localhost:3000/international')
+.then(res => res.json())
+.then(data => renderTravel(data));
 
-const cardList=document.querySelector('.card')
-function renderDomestic(cards) {
+function renderTravel(cards){
     cards.forEach((card) => {
-        const domesticCard = document.createElement('div')
-        domesticCard.className = 'card'
+        const cardsList = document.querySelector('#cards')
+        const info= document.createElement('div')
+        card.className = 'card'
 
-        const location= document.querySelector("#location")
-        location.textContent= card.location;
+        const h2 = document.createElement('h2')
+        h2.textContent = card.location
 
-        const img = document.querySelector("#domestic > img")
+        const img = document.createElement('img')
+        img.src = card.image
         img.className = 'img'
 
+        const p = document.createElement('p')
+        p.textContent = `Top Rated Actiity: ${card.activity}`
 
-        const activity = document.querySelector("#activity")
-        activity.textContent = card.activity
+        const p2 = document.createElement('p')
+        p2.textContent = `Five Star Hotel: ${card.hotel}`
 
-        const hotel = document.querySelector("#hotel")
-        hotel.textContent = card.hotel
+        const p3 = document.createElement('p')
+        p3.textContent = `Favorite Restaurant: ${card.restaurant}`
 
-        const restaurant = document.querySelector("#restaurant")
-        restaurant.textContent = card.restaurant
+        info.append(h2, img, p, p2, p3)
+        cardsList.append(info)
 
-})
-
+    })
 }
-// function renderInternational(international) {
-//     international.forEach((card) => {
-//         const internationalCard = document.createElement('div')
-//         internationalCard.className = 'card'
-//         const locationI= document.querySelector("#location > b")
-//         location.textContent= card.location;
-
-//         const imgI = document.querySelector("body > div.card > img")
-//         imgI.src = card.image
-//         imgI.className = ('.img')
 
 
-//         const activityI = document.querySelector("#activity")
-//         activityI.textContent = card.activity
-
-//         const hotelI = document.querySelector("#hotel")
-//         hotelI.textContent = card.hotel
-
-//         const restaurantI = document.querySelector("#restaurant")
-//         restaurantI.textContent = card.restaurant
 
 
-//      internationalCard.append(locationI, imgI, activityI, hotelI, restaurantI)
-//      cardsList.append(internationalCard)
-//     })
-// }
 
 // openButton.addEventListener('click', () => {
 //     nav.classList.add('menu-btn')
