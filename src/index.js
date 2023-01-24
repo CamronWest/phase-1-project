@@ -52,8 +52,16 @@ function renderTravel(cards){
 
 
 
+
 // openButton.addEventListener('click', () => {
 //     nav.classList.add('menu-btn')
 // const openButton = document.getElementById('Open-menu')
 //     nav = document.querySelector('nav')
 //     exitButton = document.getElementById('exit-menu');
+//const likeButton = document.getElementById('#like-button');
+//likeButton.addEventListener('click', () => {
+//data.likes = data.likes + 1;
+//likesLocation.textContent = `${data.likes} likes`;
+//})
+//let numOfLikes = 0;
+
