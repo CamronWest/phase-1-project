@@ -48,12 +48,12 @@ function renderTravel(cards){
     })
 }
 
-function addNewVacation(){
-    const form = document.querySelector(".add-vacation-form")
-form.addEventListener('submit', (event) => {
+//function addNewVacation(){
+ //   const form = document.querySelector(".add-vacation-form")
+//form.addEventListener('submit', (event) => {
 
 
-}
+//}
 
 
 
