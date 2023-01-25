@@ -51,9 +51,15 @@ function renderTravel(cards){
 //function addNewVacation(){
  //   const form = document.querySelector(".add-vacation-form")
 //form.addEventListener('submit', (event) => {
+    //event.preventDefault()
+    //const nameInput = event.target.name.value
+    //const imageInput = event.target.image.value
 
-
-//}
+    //const newVacation = {
+    //name: nameInput,
+    //image: imageInput
+    //likes: 0
+    //}
 
 
 
