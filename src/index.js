@@ -41,7 +41,6 @@ function renderTravel(cards){
         const p3 = document.createElement('p')
         p3.textContent = `Favorite Restaurant: ${card.restaurant}`
         
-
         info.append(h2, img, p, p2, p3)
         cardsList.append(info)
 
@@ -53,6 +52,12 @@ function renderTravel(cards){
 
 
 
+
+// openButton.addEventListener('click', () => {
+    // nav.classList.add('menu-btn')
+    // const openButton = document.getElementById('Open-menu')
+    // nav = document.querySelector('nav')
+    // exitButton = document.getElementById('Exit-menu');
 
 
 //const likeButton = document.getElementById('#like-button');
