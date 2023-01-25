@@ -41,13 +41,16 @@ function renderTravel(cards){
 
         const p3 = document.createElement('p')
         p3.textContent = `Favorite Restaurant: ${card.restaurant}`
-    })
+
+
 
         info.append(h2, img, p, p2, p3)
         cardsList.append(info)
+    })
+
+        
 }
 
-<<<<<<< HEAD
 // function addNewVacation(){
 //     const form = document.querySelector(".add-vacation-form")
 //     form.addEventListener('submit', (event) => {
@@ -62,7 +65,6 @@ function renderTravel(cards){
 //     }
 
 
-=======
 
 function addNewVacation(){
    const form = document.querySelector(".add-vacation-form")
@@ -78,7 +80,6 @@ form.addEventListener('submit', (event) => {
     }
 })
 }
->>>>>>> 9347b3c3faf09f1bd016766b47dae38646f5466b
 function renderNewDestination(e){
     e.preventDefault();
     const name = document.querySelector("#name-input").value;
@@ -118,7 +119,6 @@ let numOfLikes = 0;
 
 
 
-<<<<<<< HEAD
 // const likeButton = document.getElementById('#like-button');
 // likeButton.addEventListener('click', () => {
 // data.likes = data.likes + 1;
@@ -132,5 +132,3 @@ let numOfLikes = 0;
 //likesLocation.textContent = `${data.likes} likes`;
 //})
 //let numOfLikes = 0;
-=======
->>>>>>> 9347b3c3faf09f1bd016766b47dae38646f5466b

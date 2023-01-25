@@ -34,6 +34,13 @@ body {
 .navbar .logo span {
     color: var(--primary-color);
 }
+.navbar .form-title {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em; 
+    text-align: left;
+}
 
 .navbar nav {
     display: none;
@@ -210,12 +217,10 @@ h2 {
     }
 } */
 
-<<<<<<< HEAD
 #destination-form {
     font-size: 1em;
     font-family: 'Kalam'
 }
-=======
 
 
 
@@ -251,4 +256,3 @@ h2 {
   .like-button:focus {
     outline: none;
   }
->>>>>>> 9347b3c3faf09f1bd016766b47dae38646f5466b
