@@ -9,6 +9,7 @@
     
 </head>
 <body>
+<!-- <h1 id="travelTitle">Plan Your Next Vacation</h1> -->
     
     <div class="navbar">
         <div class = "container">
@@ -27,11 +28,42 @@
                 </ul>
             </nav>
     </div>
+
+
+    <div id="Destination-form-container">
+        <form id="destination-form">
+            <label class="form-label"><strong>Location: </strong></label>
+            <input type="text" id="name-input" />
+    
+            <label class="form-label"><strong>Image: </strong></label>
+            <input type="text" id="img-input" />
+    
+            <input type="submit" value="Submit" />
+        </form>
     </div>
+    <div hidden class="likes-section">
+        <span id="like-count" class="likes">0 likes</span>
+        <button id="like-button" class="like-button">♥</button>
+    </div>
+
+    <div id="container-location"> </div>
+
+
+
+
+
+
     <div id="cards">
             <script type="text/javascript" src="src/index.js"></script>
 
     </div>
+
+
+
+
+
+
+
 
 </body>
 </html>
