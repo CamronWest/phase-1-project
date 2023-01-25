@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', (event) => { window.alert("choose your next vacation!"); });
+//window.addEventListener('DOMContentLoaded', (event) => { window.alert("choose your next vacation!"); });
 
 function navbarButton(){
     const openButton = document.querySelector("#menu-cta")
@@ -26,7 +26,6 @@ function renderTravel(cards){
 
         const h2 = document.createElement('h2')
         h2.textContent = card.location
-       
 
         const img = document.createElement('img')
         img.src = card.image
@@ -38,12 +37,10 @@ function renderTravel(cards){
 
         const p2 = document.createElement('p')
         p2.textContent = `Five Star Hotel: ${card.hotel}`
-     
 
         const p3 = document.createElement('p')
         p3.textContent = `Favorite Restaurant: ${card.restaurant}`
         
-
         info.append(h2, img, p, p2, p3)
         cardsList.append(info)
 
@@ -54,8 +51,19 @@ function renderTravel(cards){
 
 
 
+
+
 // openButton.addEventListener('click', () => {
-//     nav.classList.add('menu-btn')
-// const openButton = document.getElementById('Open-menu')
-//     nav = document.querySelector('nav')
-//     exitButton = document.getElementById('exit-menu');
+    // nav.classList.add('menu-btn')
+    // const openButton = document.getElementById('Open-menu')
+    // nav = document.querySelector('nav')
+    // exitButton = document.getElementById('Exit-menu');
+
+
+//const likeButton = document.getElementById('#like-button');
+//likeButton.addEventListener('click', () => {
+//data.likes = data.likes + 1;
+//likesLocation.textContent = `${data.likes} likes`;
+//})
+//let numOfLikes = 0;
+

@@ -9,36 +9,36 @@ body {
     background: #f2f2f2;
     margin: 0;
     font-family: 'Poppins';
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.jetsetter.com//uploads/sites/7/2018/04/sjeL0BSe-1380x690.jpeg');
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://thumbs.dreamstime.com/b/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C-153419622.jpg');
 }
 
 
 .navbar {
     background: white;
     padding: 1em;
-  }
-  
-  .navbar .logo {
+}
+
+.navbar .logo {
     text-decoration: none;
     font-weight: bold;
     color: black;
     font-size: 1.2em;
-  }
-  
-  .navbar .logo span {
+}
+
+.navbar .logo span {
     color: var(--primary-color);
-  }
-  
-  .navbar nav {
+}
+
+.navbar nav {
     display: none;
-  }
-  
-  .navbar .container {
+}
+
+.navbar .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     place-content: space-between;
-  }
+}
 
 span {
     color: var(--primary-color);
@@ -48,19 +48,20 @@ nav {
     display: none;
     position: fixed;
     z-index: 5;
-    width: 25%;
+    width: 17%;
     right: 0;
     top: 0;
-    background: #20272E;
-    height: 100vh;
+    border-radius: 30px;
+    background: rgb(46, 43, 43);
+    height: 22vh;
     padding: 1em;
 }
 nav ul.primary-nav {
     margin-top: 5em;
     list-style: none;
-  }
-  
-  nav li a {
+}
+
+nav li a {
     color: white;
     text-decoration: none;
     display: block;
@@ -69,12 +70,12 @@ nav ul.primary-nav {
     text-align: right;
     margin: 0;
     padding: 0;
-  }
-  
-  nav li a:hover {
+}
+
+nav li a:hover {
     font-weight: bold;
-  }
-  
+}
+
 nav.menu-btn {
     display: block;
 }
@@ -105,7 +106,7 @@ nav .home:hover {
 }
 nav.menu-btn {
     display: block;
-  }
+}
 
 .menu {
     cursor: pointer; 
@@ -114,29 +115,52 @@ nav.menu-btn {
 }
 
 #cards {
-  margin: 2rem;
+    margin: 2rem;
 }
 
 .card {
-  text-align: center;
-  font-weight: bold;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px;
-  border: black solid 1px;
-  padding: 1rem;
-  width: 20rem;
-  height: 30rem;
-  display: inline-grid;
-  margin: 1rem 2rem;
-  box-shadow: 3px 4px #0606da
-}
-.card:hover{
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 40px;
+    transition: 0.3s;
+    float: left;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    border: black solid 1px;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #e04b52
+
+
+
 }
 
 .img {
-  justify-self: center;
-  height: 13rem;
-  width: 13rem;
+    justify-self: center;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 5px;
+    border: black solid 1px;
+    padding: 1rem;
+    width: 20rem;
+    height: 30rem;
+    display: inline-grid;
+    margin: -1rem;
+    box-shadow: 3px 4px #0606da
+}
+.card:hover{
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+.img {
+    display: block;
+    justify-self: center;
+    height: 10em;
+    width: 10em;
+
 }
