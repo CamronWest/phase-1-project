@@ -152,7 +152,9 @@ nav.menu-btn {
     display: inline-grid;
     margin: -1rem;
     box-shadow: 3px 4px #0606da
+    
 }
+
 .card:hover{
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 }
