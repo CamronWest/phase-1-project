@@ -8,6 +8,7 @@
 body {
     background: #f2f2f2;
     margin: 0;
+    padding: 0;
     font-family: 'Poppins';
     background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://thumbs.dreamstime.com/b/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C-153419622.jpg');
 }
@@ -53,7 +54,7 @@ nav {
     top: 0;
     border-radius: 30px;
     background: rgb(46, 43, 43);
-    height: 22vh;
+    height: 30vh;
     padding: 1em;
 }
 nav ul.primary-nav {
@@ -121,21 +122,23 @@ nav.menu-btn {
 .card {
     background-color: rgb(255, 255, 255);
     margin: auto;
-    padding: 40px;
+    padding: 0px;
     transition: 0.3s;
-    float: left;
+    float: center;
     text-align: center;
     width: fit-content;
     height: fit-content;
     text-align: center;
     border: black solid 1px;
-    width: 15rem;
+    min-width: 100vh;
     height: 25rem;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px #e04b52
-
-
+    box-shadow: 3px 4px #e04b52;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 85vh;
 
 }
 
@@ -160,7 +163,41 @@ nav.menu-btn {
 .img {
     display: block;
     justify-self: center;
-    height: 10em;
-    width: 10em;
+    height: 30em;
+    width: 30em;
 
 }
+
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+p {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;;
+}
+
+h2 {
+    font-size: 3em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+

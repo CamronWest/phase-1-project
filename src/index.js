@@ -1,4 +1,25 @@
-//window.addEventListener('DOMContentLoaded', (event) => { window.alert("choose your next vacation!"); });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+
+    })
+})
+
+const hiddenElements = document.querySelectorAll('.hidden')
+hiddenElements.forEach((el) => observer.observe(el));
+
+// function scrollEvent(){
+//     observer.addEventListener('scroll', (event) => {
+//         event.preventDefault();
+//     })
+// }
+
 
 function navbarButton(){
     const openButton = document.querySelector("#menu-cta")
@@ -23,6 +44,7 @@ function renderTravel(cards){
         const cardsList = document.querySelector('#cards')
         const info= document.createElement('div')
         info.className = 'card'
+
 
         const h2 = document.createElement('h2')
         h2.textContent = card.location
@@ -77,4 +99,5 @@ function renderTravel(cards){
 //likesLocation.textContent = `${data.likes} likes`;
 //})
 //let numOfLikes = 0;
+
 
