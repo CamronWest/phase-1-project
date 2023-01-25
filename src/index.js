@@ -44,7 +44,7 @@ function renderTravel(cards){
 
         const button = document.createElement('button');
         button.className = 'btn';
-        button.textContent = 'Likes';
+        button.textContent = 'Like';
         button.addEventListener('click', () => {
             card.activity += 1 ;
             e.preventDefault();
@@ -53,7 +53,7 @@ function renderTravel(cards){
 
         info.append(h2, img, p, p2, p3, button)
         cardsList.append(info)
-        div.appendChild(button)
+        
 
     })
 }
