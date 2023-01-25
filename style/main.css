@@ -209,6 +209,11 @@ h2 {
 } */
 
 
-.likes-button {
-    display: block;
-}
+.like-button {
+    color: rgb(188, 20, 20);
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+  }
