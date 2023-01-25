@@ -132,13 +132,13 @@ document.getElementById('destination-form').addEventListener('submit', renderNew
 //     exitButton = document.getElementById('Exit-menu');
 
 
-const likeButton = document.getElementById('#like-button');
-likeButton.addEventListener('click', () => {
-data.likes = data.likes + 1;
-likesLocation.textContent = `${data.likes} likes`;
-})
-let numOfLikes = 0;
+// const likeButton = document.getElementById('#like-button');
+// likeButton.addEventListener('click', () => {
+// data.likes = data.likes + 1;
+// likesLocation.textContent = `${data.likes} likes`;
 // })
+// let numOfLikes = 0;
+// // })
 //const likeButton = document.getElementById('#like-button');
 //likeButton.addEventListener('click', () => {
 //data.likes = data.likes + 1;

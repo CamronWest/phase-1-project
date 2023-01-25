@@ -59,7 +59,7 @@ nav {
     right: 0;
     top: 0;
     border-radius: 30px;
-    background: rgb(46, 43, 43);
+    background: var(--primary-color);
     height: 30vh;
     padding: 1em;
 }
