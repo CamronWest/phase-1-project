@@ -94,3 +94,10 @@ data.likes = data.likes + 1;
 likesLocation.textContent = `${data.likes} likes`;
 })
 let numOfLikes = 0;
+
+
+
+
+
+
+
