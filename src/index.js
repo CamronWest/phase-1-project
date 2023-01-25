@@ -47,6 +47,7 @@ function renderTravel(cards){
         cardsList.append(info)
 }
 
+<<<<<<< HEAD
 // function addNewVacation(){
 //     const form = document.querySelector(".add-vacation-form")
 //     form.addEventListener('submit', (event) => {
@@ -61,6 +62,23 @@ function renderTravel(cards){
 //     }
 
 
+=======
+
+function addNewVacation(){
+   const form = document.querySelector(".add-vacation-form")
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const nameInput = event.target.name.value
+    const imageInput = event.target.image.value
+
+    const newVacation = {
+    name: nameInput,
+    image: imageInput,
+    likes: 0
+    }
+})
+}
+>>>>>>> 9347b3c3faf09f1bd016766b47dae38646f5466b
 function renderNewDestination(e){
     e.preventDefault();
     const name = document.querySelector("#name-input").value;
@@ -81,7 +99,18 @@ function renderNewDestination(e){
 }
 
 document.getElementById('destination-form').addEventListener('submit', renderNewDestination)
-document.getElementById('destination-form').reset()
+
+
+
+
+
+
+const likeButton = document.getElementById('#like-button');
+likeButton.addEventListener('click', () => {
+data.likes = data.likes + 1;
+likesLocation.textContent = `${data.likes} likes`;
+})
+let numOfLikes = 0;
 
 
 
@@ -89,27 +118,7 @@ document.getElementById('destination-form').reset()
 
 
 
-
-
-
-
-
-
-//function addNewVacation(){
- //   const form = document.querySelector(".add-vacation-form")
-//form.addEventListener('submit', (event) => {
-    //event.preventDefault()
-    //const nameInput = event.target.name.value
-    //const imageInput = event.target.image.value
-
-
-// openButton.addEventListener('click', () => {
-//     nav.classList.add('menu-btn')
-//     const openButton = document.getElementById('Open-menu')
-//     nav = document.querySelector('nav')
-//     exitButton = document.getElementById('Exit-menu');
-
-
+<<<<<<< HEAD
 // const likeButton = document.getElementById('#like-button');
 // likeButton.addEventListener('click', () => {
 // data.likes = data.likes + 1;
@@ -123,3 +132,5 @@ document.getElementById('destination-form').reset()
 //likesLocation.textContent = `${data.likes} likes`;
 //})
 //let numOfLikes = 0;
+=======
+>>>>>>> 9347b3c3faf09f1bd016766b47dae38646f5466b
