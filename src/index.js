@@ -63,26 +63,20 @@ function renderTravel(cards){
 
         const p3 = document.createElement('p')
         p3.textContent = `Favorite Restaurant: ${card.restaurant}`
-<<<<<<< HEAD
 
 
-=======
->>>>>>> a507642b2dca913c2cba340a1ebf44fc6d5ae2c3
 
         info.append(h2, img, p, p2, p3)
         cardsList.append(info)
     })
 
-<<<<<<< HEAD
         
 }
 
-=======
       
-}
 
 
->>>>>>> a507642b2dca913c2cba340a1ebf44fc6d5ae2c3
+
 // function addNewVacation(){
 // const form = document.querySelector(".add-vacation-form")
 // form.addEventListener('submit', (event) => {
@@ -97,7 +91,6 @@ function renderTravel(cards){
 //     }
 // })
 
-<<<<<<< HEAD
 
 
 function addNewVacation(){
@@ -114,8 +107,6 @@ form.addEventListener('submit', (event) => {
     }
 })
 }
-=======
->>>>>>> a507642b2dca913c2cba340a1ebf44fc6d5ae2c3
 function renderNewDestination(e){
     e.preventDefault();
     const name = document.querySelector("#name-input").value;
@@ -140,7 +131,6 @@ document.getElementById('destination-form').addEventListener('submit', renderNew
 
 
 
-<<<<<<< HEAD
 
 
 const likeButton = document.getElementById('#like-button');
@@ -156,8 +146,6 @@ let numOfLikes = 0;
 
 
 
-=======
->>>>>>> a507642b2dca913c2cba340a1ebf44fc6d5ae2c3
 // const likeButton = document.getElementById('#like-button');
 // likeButton.addEventListener('click', () => {
 // data.likes = data.likes + 1;
