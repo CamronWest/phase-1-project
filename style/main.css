@@ -157,7 +157,7 @@ nav.menu-btn {
     height: 30rem;
     display: inline-grid;
     margin: -1rem;
-    box-shadow: 3px 4px #0606da
+    box-shadow: 3px 3px #0606da
     
 }
 
@@ -175,7 +175,7 @@ nav.menu-btn {
 
 p {
     font-family: 'Kalam';
-    padding: 0px
+    padding: 1px
 
 }
 

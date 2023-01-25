@@ -31,6 +31,9 @@ function renderTravel(cards){
         const img = document.createElement('img')
         img.src = card.image
         img.className = 'img'
+        img.addEventListener('mouseover', (e) => {
+            img = 500px;
+        })
 
         const p = document.createElement('p')
         p.textContent = `Top Rated Activity: ${card.activity}`
@@ -46,6 +49,7 @@ function renderTravel(cards){
         cardsList.append(info)
     })
 }
+
 
 function addNewVacation(){
    const form = document.querySelector(".add-vacation-form")
@@ -81,7 +85,6 @@ function renderNewDestination(e){
 }
 
 document.getElementById('destination-form').addEventListener('submit', renderNewDestination)
-document.getElementById('destination-form').reset()
 
 
 
