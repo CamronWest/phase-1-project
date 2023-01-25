@@ -4,6 +4,12 @@
     --primary-color:  blue;
 }
 
+#travelTitle{
+    text-size-adjust: 30px;
+    text-align: center;
+    font-family: 'Poppins';
+    color: rgb(0, 0, 0);
+}
 
 body {
     background: #f2f2f2;
@@ -154,8 +160,10 @@ nav.menu-btn {
     height: 30rem;
     display: inline-grid;
     margin: -1rem;
-    box-shadow: 3px 4px #0606da
+    box-shadow: 3px 3px #0606da
+    
 }
+
 .card:hover{
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 }
@@ -201,3 +209,39 @@ h2 {
     transform: translateX(0);
 }
 
+p {
+    font-family: 'Kalam';
+    padding: 1px
+
+}
+
+h2 {
+    font-family: 'Kalam';
+}
+
+/* #travelTitle { 
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 35px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+} */
