@@ -56,7 +56,7 @@ function renderNewDestination(e){
     const hotel = document.querySelector("#hotel-input").value;
 
     let newDestination = {
-        name: name,
+        location: name,
         image: img,
         activity: activity,
         restaurant: restaurant,
@@ -67,6 +67,7 @@ function renderNewDestination(e){
 }
 
 document.getElementById('destination-form').addEventListener('submit', renderNewDestination)
+document.getElementById('destination-form').reset()
 
 
 
