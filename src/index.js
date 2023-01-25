@@ -31,9 +31,6 @@ function renderTravel(cards){
         const img = document.createElement('img')
         img.src = card.image
         img.className = 'img'
-        img.addEventListener('mouseover', (e) => {
-            img = 500px;
-        })
 
         const p = document.createElement('p')
         p.textContent = `Top Rated Activity: ${card.activity}`
