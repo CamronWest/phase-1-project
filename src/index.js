@@ -81,6 +81,7 @@ function renderNewDestination(e){
 }
 
 document.getElementById('destination-form').addEventListener('submit', renderNewDestination)
+document.getElementById('destination-form').reset()
 
 
 
