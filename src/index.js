@@ -43,7 +43,7 @@ function renderTravel(cards){
         p3.textContent = `Favorite Restaurant: ${card.restaurant}`
 
         const button = document.createElement('button');
-        button.className = 'btn';
+        button.className = 'like-button';
         button.textContent = 'Like';
         button.addEventListener('click', () => {
             card.activity += 1 ;
