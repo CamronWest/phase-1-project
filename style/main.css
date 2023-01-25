@@ -246,45 +246,40 @@ h2 {
     }
 } */
 
-<<<<<<< HEAD
 #destination-form {
     font-size: 1em;
     font-family: 'Kalam'
 }
-=======
 
-
-
-.likes-section {
+/* .likes-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-  }
-  
-  .likes {
+}
+
+.likes {
     font-size: 0.8rem;
     font-weight: 500;
-  }
-  
-  .like-button {
+}
+
+.like-button {
     color: rgb(174, 16, 16);
     font-size: 1.5rem;
     border: none;
     background: none;
     transition: color 300ms;
     cursor: pointer;
-  }
-  
-  .like-button:hover {
+}
+
+.like-button:hover {
     color: rgb(19, 241, 41);
-  }
-  
-  .like-button:active {
+}
+
+.like-button:active {
     color: rgb(253, 124, 126);
-  }
-  
-  .like-button:focus {
+}
+
+.like-button:focus {
     outline: none;
-  }
->>>>>>> 9347b3c3faf09f1bd016766b47dae38646f5466b
+} */
