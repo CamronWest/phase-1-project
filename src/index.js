@@ -51,7 +51,11 @@ function renderTravel(cards){
             p.textContent = `${card.activity} likes`;
         });
 
-        info.append(h2, img, p, p2, p3, button)
+
+
+
+        info.append(h2, img, p, p2, p3, button);
+
         cardsList.append(info)
         
 
