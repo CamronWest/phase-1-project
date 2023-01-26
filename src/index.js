@@ -97,7 +97,6 @@ function renderTravel(cards){
 
 function addNewVacation(){
     const form = document.querySelector(".add-vacation-form")
-   const form = document.querySelector(".add-vacation-form")
 
     form.addEventListener('submit', (event) => {
     event.preventDefault()
@@ -137,12 +136,12 @@ document.getElementById('destination-form').addEventListener('submit', renderNew
 
 
 
-const likeButton = document.getElementById('#like-button');
-likeButton.addEventListener('click', () => {
-data.likes = data.likes + 1;
-likesLocation.textContent = `${data.likes} likes`;
-})
-let numOfLikes = 0;
+// const likeButton = document.getElementById('#like-button');
+// likeButton.addEventListener('click', () => {
+// data.likes = data.likes + 1;
+// likesLocation.textContent = `${data.likes} likes`;
+// })
+// let numOfLikes = 0;
 
 
 
