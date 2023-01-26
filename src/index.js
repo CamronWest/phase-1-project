@@ -42,16 +42,7 @@ fetch ('http://localhost:3000/international')
 .then(res => res.json())
 .then(data => renderTravel(data));
 
-// let num = 1;
-// function adding(){
-//     while(num <9){
-//         num++;
-//     }
-//     console.log(num);
-//     return num;
-// }
 
-// adding();
 let num = 1;
 
 function renderTravel(cards){
@@ -137,57 +128,3 @@ document.getElementById('destination-form').addEventListener('submit', renderNew
 // likesLocation.textContent = `${data.likes} likes`;
 // })
 // let numOfLikes = 0;
-
-
-
-
-
-
-
-// const likeButton = document.getElementById('#like-button');
-// likeButton.addEventListener('click', () => {
-// data.likes = data.likes + 1;
-// likesLocation.textContent = `${data.likes} likes`;
-// })
-// let numOfLikes = 0;
-
-
-
-
-
-
-
-
-
-//function addNewVacation(){
- //   const form = document.querySelector(".add-vacation-form")
-//form.addEventListener('submit', (event) => {
-    //event.preventDefault()
-    //const nameInput = event.target.name.value
-    //const imageInput = event.target.image.value
-
-
-// openButton.addEventListener('click', () => {
-//     nav.classList.add('menu-btn')
-//     const openButton = document.getElementById('Open-menu')
-//     nav = document.querySelector('nav')
-//     exitButton = document.getElementById('Exit-menu');
-
-
-
-// const likeButton = document.getElementById('#like-button');
-// likeButton.addEventListener('click', () => {
-// data.likes = data.likes + 1;
-// likesLocation.textContent = `${data.likes} likes`;
-
-// let numOfLikes = 0;
-
-// })
-// let numOfLikes = 0;
-// // })
-//const likeButton = document.getElementById('#like-button');
-//likeButton.addEventListener('click', () => {
-//data.likes = data.likes + 1;
-//likesLocation.textContent = `${data.likes} likes`;
-//})
-//let numOfLikes = 0;
