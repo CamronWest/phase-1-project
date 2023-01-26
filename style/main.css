@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 :root {
-    --primary-color:  blue;
+    --primary-color:  salmon;
 }
 
 #travelTitle{
@@ -22,17 +22,19 @@ body {
 .navbar {
     background: white;
     padding: 1em;
+    
 }
 
 .navbar .logo {
     text-decoration: none;
     font-weight: bold;
     color: black;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .navbar .logo span {
     color: var(--primary-color);
+    font-size: 1.3em;
 }
 
 .navbar nav {
@@ -46,6 +48,8 @@ body {
     place-content: space-between;
 }
 
+
+
 span {
     color: var(--primary-color);
 }
@@ -58,17 +62,41 @@ nav {
     right: 0;
     top: 0;
     border-radius: 30px;
+<<<<<<< HEAD
     background: rgb(46, 43, 43);
     height: 22vh;
+=======
+    height: 18vh;
+>>>>>>> 05d269c7f8ca1285ca04d6b99ed90fb1cb4a3a6f
     padding: 1em;
+    background-color: salmon;
 }
+
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
 nav ul.primary-nav {
     margin-top: 5em;
     list-style: none;
+    display: block;
+    line-height: 44px;
+    padding: 0 28px;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: -0.016em;
+    font-weight: 4em;
+    
 }
 
 nav li a {
-    color: white;
+    color: black;
     text-decoration: none;
     display: block;
     padding: .5em;
@@ -96,7 +124,7 @@ nav.menu-btn {
 }
 
 .home {
-    color: white;
+    color: black;
     text-decoration: none;
     display: block;
     padding: .5em;
@@ -183,33 +211,6 @@ h2 {
     font-family: 'Kalam';
 }
 
-/* #travelTitle { 
-    text-transform: uppercase;
-    background-image: linear-gradient(
-    -225deg,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-    font-size: 35px;
-}
-
-@keyframes textclip {
-    to {
-        background-position: 200% center;
-    }
-} */
-
 #destination-form {
     font-size: 1em;
     font-family: 'Kalam'
@@ -236,6 +237,7 @@ h2 {
     background: none;
     transition: color 300ms;
     cursor: pointer;
+<<<<<<< HEAD
   }
   
   .like-button:hover {
@@ -249,3 +251,20 @@ h2 {
   .like-button:focus {
     outline: none;
   }
+=======
+}
+
+.like-button:hover {
+    color: rgb(19, 241, 41);
+}
+
+.like-button:active {
+    color: rgb(253, 124, 126);
+}
+
+.like-button:focus {
+    outline: none;
+
+}
+
+>>>>>>> 05d269c7f8ca1285ca04d6b99ed90fb1cb4a3a6f

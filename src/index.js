@@ -12,13 +12,15 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 const hiddenElements = document.querySelectorAll('.hidden')
-hiddenElements.forEach((el) => observer.observe(el));
 
-// function scrollEvent(){
-//     observer.addEventListener('scroll', (event) => {
-//         event.preventDefault();
-//     })
-// }
+
+function scrollEvent(){
+    document.addEventListener('scroll', (event) => {
+        event.preventDefault();
+        hiddenElements.forEach((el) => observer.observe(el));
+    })
+}
+scrollEvent()
 
 
 
@@ -26,9 +28,9 @@ function navbarButton(){
     const openButton = document.querySelector("#menu-cta")
     nav = document.querySelector('nav');
 
-openButton.addEventListener('click', () => {
+    openButton.addEventListener('click', () => {
         nav.classList.add('menu-btn')
-})
+    })
 }
 navbarButton();
 
@@ -40,13 +42,28 @@ fetch ('http://localhost:3000/international')
 .then(res => res.json())
 .then(data => renderTravel(data));
 
+// let num = 1;
+// function adding(){
+//     while(num <9){
+//         num++;
+//     }
+//     console.log(num);
+//     return num;
+// }
+
+// adding();
+let num = 1;
+
 function renderTravel(cards){
     cards.forEach((card) => {
         const cardsList = document.querySelector('#cards')
-        const info = document.createElement('div')
+        var info = document.createElement('div')
+        info.id = `card-${num}`
         info.className = 'card'
-
-
+        num++;
+        console.log(num);
+        
+        
         const h2 = document.createElement('h2')
         h2.textContent = card.location
 
@@ -70,32 +87,13 @@ function renderTravel(cards){
         cardsList.append(info)
     })
 
-        
 }
-
-      
-
-
-
-// function addNewVacation(){
-// const form = document.querySelector(".add-vacation-form")
-// form.addEventListener('submit', (event) => {
-//     event.preventDefault()
-//     const nameInput = event.target.name.value
-//     const imageInput = event.target.image.value
-
-//     const newVacation = {
-//     name: nameInput,
-//     image: imageInput,
-//     likes: 0
-//     }
-// })
-
 
 
 function addNewVacation(){
    const form = document.querySelector(".add-vacation-form")
-form.addEventListener('submit', (event) => {
+
+    form.addEventListener('submit', (event) => {
     event.preventDefault()
     const nameInput = event.target.name.value
     const imageInput = event.target.image.value
@@ -133,12 +131,12 @@ document.getElementById('destination-form').addEventListener('submit', renderNew
 
 
 
-const likeButton = document.getElementById('#like-button');
-likeButton.addEventListener('click', () => {
-data.likes = data.likes + 1;
-likesLocation.textContent = `${data.likes} likes`;
-})
-let numOfLikes = 0;
+// const likeButton = document.getElementById('#like-button');
+// likeButton.addEventListener('click', () => {
+// data.likes = data.likes + 1;
+// likesLocation.textContent = `${data.likes} likes`;
+// })
+// let numOfLikes = 0;
 
 
 
