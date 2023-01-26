@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 :root {
-    --primary-color:  blue;
+    --primary-color:  salmon;
 }
 
 #travelTitle{
@@ -23,17 +23,19 @@ body {
 .navbar {
     background: white;
     padding: 1em;
+    
 }
 
 .navbar .logo {
     text-decoration: none;
     font-weight: bold;
     color: black;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .navbar .logo span {
     color: var(--primary-color);
+    font-size: 1.3em;
 }
 .navbar .form-title {
     text-decoration: none;
@@ -54,6 +56,8 @@ body {
     place-content: space-between;
 }
 
+
+
 span {
     color: var(--primary-color);
 }
@@ -66,17 +70,36 @@ nav {
     right: 0;
     top: 0;
     border-radius: 30px;
-    background: var(--primary-color);
-    height: 30vh;
+    height: 18vh;
     padding: 1em;
+    background-color: salmon;
 }
+
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
 nav ul.primary-nav {
     margin-top: 5em;
     list-style: none;
+    display: block;
+    line-height: 44px;
+    padding: 0 28px;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: -0.016em;
+    font-weight: 4em;
+    
 }
 
 nav li a {
-    color: white;
+    color: black;
     text-decoration: none;
     display: block;
     padding: .5em;
@@ -104,7 +127,7 @@ nav.menu-btn {
 }
 
 .home {
-    color: white;
+    color: black;
     text-decoration: none;
     display: block;
     padding: .5em;
@@ -229,9 +252,6 @@ h2 {
 #destination-form {
     font-size: 1em;
     font-family: 'Kalam'
-<<<<<<< HEAD
-}
-=======
 }
 
 /* .likes-section {

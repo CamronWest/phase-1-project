@@ -28,9 +28,9 @@ function navbarButton(){
     const openButton = document.querySelector("#menu-cta")
     nav = document.querySelector('nav');
 
-openButton.addEventListener('click', () => {
+    openButton.addEventListener('click', () => {
         nav.classList.add('menu-btn')
-})
+    })
 }
 navbarButton();
 
@@ -89,19 +89,11 @@ function renderTravel(cards){
 
 }
 
-        
-
-      
-
-
-
-
-
-
 
 function addNewVacation(){
    const form = document.querySelector(".add-vacation-form")
-form.addEventListener('submit', (event) => {
+
+    form.addEventListener('submit', (event) => {
     event.preventDefault()
     const nameInput = event.target.name.value
     const imageInput = event.target.image.value
@@ -139,12 +131,12 @@ document.getElementById('destination-form').addEventListener('submit', renderNew
 
 
 
-const likeButton = document.getElementById('#like-button');
-likeButton.addEventListener('click', () => {
-data.likes = data.likes + 1;
-likesLocation.textContent = `${data.likes} likes`;
-})
-let numOfLikes = 0;
+// const likeButton = document.getElementById('#like-button');
+// likeButton.addEventListener('click', () => {
+// data.likes = data.likes + 1;
+// likesLocation.textContent = `${data.likes} likes`;
+// })
+// let numOfLikes = 0;
 
 
 
