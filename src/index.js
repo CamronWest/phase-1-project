@@ -12,13 +12,15 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 const hiddenElements = document.querySelectorAll('.hidden')
-hiddenElements.forEach((el) => observer.observe(el));
 
-// function scrollEvent(){
-//     observer.addEventListener('scroll', (event) => {
-//         event.preventDefault();
-//     })
-// }
+
+function scrollEvent(){
+    document.addEventListener('scroll', (event) => {
+        event.preventDefault();
+        hiddenElements.forEach((el) => observer.observe(el));
+    })
+}
+scrollEvent()
 
 
 
@@ -40,13 +42,28 @@ fetch ('http://localhost:3000/international')
 .then(res => res.json())
 .then(data => renderTravel(data));
 
+// let num = 1;
+// function adding(){
+//     while(num <9){
+//         num++;
+//     }
+//     console.log(num);
+//     return num;
+// }
+
+// adding();
+let num = 1;
+
 function renderTravel(cards){
     cards.forEach((card) => {
         const cardsList = document.querySelector('#cards')
-        const info = document.createElement('div')
+        var info = document.createElement('div')
+        info.id = `card-${num}`
         info.className = 'card'
-
-
+        num++;
+        console.log(num);
+        
+        
         const h2 = document.createElement('h2')
         h2.textContent = card.location
 
