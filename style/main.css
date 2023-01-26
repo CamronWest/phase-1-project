@@ -75,14 +75,7 @@ nav {
     background-color: salmon;
 }
 
-@keyframes slide {
-    0% {
-      transform:translateX(-25%);
-    }
-    100% {
-      transform:translateX(25%);
-    }
-  }
+
 nav ul.primary-nav {
     margin-top: 5em;
     list-style: none;
