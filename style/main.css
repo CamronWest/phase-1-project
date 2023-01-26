@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 
 :root {
     --primary-color:  salmon;
 }
+#form-title{
+    font-family:'Oleo Script', cursive;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: left;
 
+}
 #travelTitle{
     text-size-adjust: 30px;
     text-align: center;
@@ -70,19 +78,13 @@ nav {
     right: 0;
     top: 0;
     border-radius: 30px;
+    background: rgb(46, 43, 43);
+    height: 22vh;
     height: 18vh;
     padding: 1em;
     background-color: salmon;
 }
 
-@keyframes slide {
-    0% {
-        transform:translateX(-25%);
-    }
-    100% {
-        transform:translateX(25%);
-    }
-}
 nav ul.primary-nav {
     margin-top: 5em;
     list-style: none;
@@ -153,6 +155,7 @@ nav.menu-btn {
 
 #cards {
     margin: 2rem;
+
 }
 
 .card {
@@ -176,6 +179,8 @@ nav.menu-btn {
     align-content: center;
     min-height: 85vh;
 
+
+
 }
 
 .img {
@@ -186,11 +191,12 @@ nav.menu-btn {
     border-radius: 5px;
     border: black solid 1px;
     padding: 1rem;
-    width: 20rem;
-    height: 30rem;
     display: inline-grid;
-    margin: -1rem;
-    box-shadow: 3px 3px #0606da
+    margin: 0rem;
+    box-shadow: 3px 3px #0606da;
+    justify-self: center;
+    width: 30em;
+    height: 30em
     
 }
 
@@ -198,33 +204,26 @@ nav.menu-btn {
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 }
 
-.img {
-    display: block;
-    justify-self: center;
-    height: 30em;
-    width: 30em;
-
-}
-
 
 section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 p {
-    font-size: 2em;
+    font-size: 1em;
     font-style: italic;
     font-weight: bold;;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2em;
     font-style: italic;
     font-weight: bold;
 }
+
 
 .hidden {
     opacity: 0;
@@ -239,45 +238,57 @@ h2 {
     transform: translateX(0);
 }
 
-p {
-    font-family: 'Kalam';
-    padding: 1px
-
-}
-
-h2 {
-    font-family: 'Kalam';
-}
-
 #destination-form {
     font-size: 1em;
     font-family: 'Kalam'
 
 }
 
-/* .likes-section {
+
+
+.likes-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-}
-
-.likes {
+  }
+  
+  .likes {
     font-size: 0.8rem;
     font-weight: 500;
-}
-
-.like-button {
-    color: rgb(174, 16, 16);
-    font-size: 1.5rem;
+  }
+  
+  .like-button {
+    color: red;
+    font-size: 1rem;
     border: none;
     background: none;
     transition: color 300ms;
     cursor: pointer;
-}
+    font-weight: bold;
+    border-radius: 5px;
+    height: 3rem;
+    width: max-content;
+    
+  }
+  
+  .like-button:hover {
+    font-weight:bold;
+    color: black;
+  }
+  
+  .like-button:active {
+    color: rgb(250, 5, 9);
+  }
+  
+  .like-button:focus {
+    outline: none;
+  }
+
 
 .like-button:hover {
-    color: rgb(19, 241, 41);
+    color: black;
+    font-weight: bold;
 }
 
 .like-button:active {
@@ -286,8 +297,24 @@ h2 {
 
 .like-button:focus {
     outline: none;
-/*}
+}
 
 
+
+
+.dislike-button{
+    color: blue;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 3rem;
+    width: max-content;
+    text-align: right;
+    
+}
 
 
