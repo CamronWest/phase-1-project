@@ -79,12 +79,12 @@ nav {
 
 @keyframes slide {
     0% {
-      transform:translateX(-25%);
+        transform:translateX(-25%);
     }
     100% {
-      transform:translateX(25%);
+        transform:translateX(25%);
     }
-  }
+}
 nav ul.primary-nav {
     margin-top: 5em;
     list-style: none;
@@ -219,6 +219,7 @@ h2 {
 #destination-form {
     font-size: 1em;
     font-family: 'Kalam'
+
 }
 
 
@@ -274,8 +275,10 @@ h2 {
 
 .like-button:focus {
     outline: none;
+/*}
 
-}
+
+
 
 .dislike-button{
     color: blue;
