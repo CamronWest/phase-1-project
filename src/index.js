@@ -130,30 +130,13 @@ function renderNewDestination(e){
 }
 
 document.getElementById('destination-form').addEventListener('submit', renderNewDestination)
-document.getElementById('destination-form').addEventListener('submit', renderNewDestination)
 
 
 
 
 
 
-// const likeButton = document.getElementById('#like-button');
-// likeButton.addEventListener('click', () => {
-// data.likes = data.likes + 1;
-// likesLocation.textContent = `${data.likes} likes`;
-// })
-// let numOfLikes = 0;
 
 
-
-
-
-
-// const likeButton = document.getElementById('#like-button');
-// likeButton.addEventListener('click', () => {
-// data.likes = data.likes + 1;
-// likesLocation.textContent = `${data.likes} likes`;
-// })
-// let numOfLikes = 0;
 
 
