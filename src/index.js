@@ -1,4 +1,3 @@
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -72,13 +71,28 @@ function renderTravel(cards){
         const p3 = document.createElement('p')
         p3.textContent = `Favorite Restaurant: ${card.restaurant}`
 
+        const button = document.createElement('button')
+        button.textContent = 'LOVE'
+        button.className = 'like-button'
+        button.addEventListener('click', () => {
+            button.textContent = 'LOVED!'
+          })
+          button.addEventListener("click", () => alert('Destination has been added to your Favorites'))
+        
+    
+        const button2 = document.createElement('button')
+        button2.textContent = 'Dislike'
+        button2.className = 'dislike-button'
+        button2.addEventListener('click', () => {
+            button2.textContent = 'Not my Fave'
+          })
 
 
-        info.append(h2, img, p, p2, p3)
+
+        info.append(h2, img, p, p2, p3, button, button2)
         cardsList.append(info)
-    })
-
-}
+    }
+    )}
 
 
 function addNewVacation(){
@@ -116,6 +130,7 @@ function renderNewDestination(e){
 }
 
 document.getElementById('destination-form').addEventListener('submit', renderNewDestination)
+document.getElementById('destination-form').addEventListener('submit', renderNewDestination)
 
 
 
@@ -128,3 +143,17 @@ document.getElementById('destination-form').addEventListener('submit', renderNew
 // likesLocation.textContent = `${data.likes} likes`;
 // })
 // let numOfLikes = 0;
+
+
+
+
+
+
+// const likeButton = document.getElementById('#like-button');
+// likeButton.addEventListener('click', () => {
+// data.likes = data.likes + 1;
+// likesLocation.textContent = `${data.likes} likes`;
+// })
+// let numOfLikes = 0;
+
+
