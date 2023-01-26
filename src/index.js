@@ -6,7 +6,6 @@ const observer = new IntersectionObserver((entries) => {
         } else {
             entry.target.classList.remove('show');
         }
-
     })
 })
 
@@ -82,7 +81,7 @@ function renderTravel(cards){
 
 function addNewVacation(){
     const form = document.querySelector(".add-vacation-form")
-   const form = document.querySelector(".add-vacation-form")
+    const form = document.querySelector(".add-vacation-form")
 
     form.addEventListener('submit', (event) => {
     event.preventDefault()
