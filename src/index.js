@@ -11,13 +11,15 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 const hiddenElements = document.querySelectorAll('.hidden')
-hiddenElements.forEach((el) => observer.observe(el));
 
-// function scrollEvent(){
-//     observer.addEventListener('scroll', (event) => {
-//         event.preventDefault();
-//     })
-// }
+
+function scrollEvent(){
+    document.addEventListener('scroll', (event) => {
+        event.preventDefault();
+        hiddenElements.forEach((el) => observer.observe(el));
+    })
+}
+scrollEvent()
 
 
 
@@ -25,9 +27,9 @@ function navbarButton(){
     const openButton = document.querySelector("#menu-cta")
     nav = document.querySelector('nav');
 
-openButton.addEventListener('click', () => {
+    openButton.addEventListener('click', () => {
         nav.classList.add('menu-btn')
-})
+    })
 }
 navbarButton();
 
@@ -39,13 +41,19 @@ fetch ('http://localhost:3000/international')
 .then(res => res.json())
 .then(data => renderTravel(data));
 
+
+let num = 1;
+
 function renderTravel(cards){
     cards.forEach((card) => {
         const cardsList = document.querySelector('#cards')
-        const info = document.createElement('div')
+        var info = document.createElement('div')
+        info.id = `card-${num}`
         info.className = 'card'
-
-
+        num++;
+        console.log(num);
+        
+        
         const h2 = document.createElement('h2')
         h2.textContent = card.location
 
@@ -74,6 +82,8 @@ function renderTravel(cards){
 
 function addNewVacation(){
     const form = document.querySelector(".add-vacation-form")
+   const form = document.querySelector(".add-vacation-form")
+
     form.addEventListener('submit', (event) => {
     event.preventDefault()
     const nameInput = event.target.name.value
@@ -130,44 +140,3 @@ let numOfLikes = 0;
 // likesLocation.textContent = `${data.likes} likes`;
 // })
 // let numOfLikes = 0;
-
-
-
-
-
-
-
-
-
-//function addNewVacation(){
- //   const form = document.querySelector(".add-vacation-form")
-//form.addEventListener('submit', (event) => {
-    //event.preventDefault()
-    //const nameInput = event.target.name.value
-    //const imageInput = event.target.image.value
-
-
-// openButton.addEventListener('click', () => {
-//     nav.classList.add('menu-btn')
-//     const openButton = document.getElementById('Open-menu')
-//     nav = document.querySelector('nav')
-//     exitButton = document.getElementById('Exit-menu');
-
-
-
-// const likeButton = document.getElementById('#like-button');
-// likeButton.addEventListener('click', () => {
-// data.likes = data.likes + 1;
-// likesLocation.textContent = `${data.likes} likes`;
-
-// let numOfLikes = 0;
-
-// })
-// let numOfLikes = 0;
-// // })
-//const likeButton = document.getElementById('#like-button');
-//likeButton.addEventListener('click', () => {
-//data.likes = data.likes + 1;
-//likesLocation.textContent = `${data.likes} likes`;
-//})
-//let numOfLikes = 0;
