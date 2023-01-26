@@ -81,28 +81,38 @@ function renderTravel(cards){
         const p3 = document.createElement('p')
         p3.textContent = `Favorite Restaurant: ${card.restaurant}`
 
+
+
         info.append(h2, img, p, p2, p3)
         cardsList.append(info)
     })
 
-      
 }
 
+        
 
-// function addNewVacation(){
-// const form = document.querySelector(".add-vacation-form")
-// form.addEventListener('submit', (event) => {
-//     event.preventDefault()
-//     const nameInput = event.target.name.value
-//     const imageInput = event.target.image.value
+      
 
-//     const newVacation = {
-//     name: nameInput,
-//     image: imageInput,
-//     likes: 0
-//     }
-// })
 
+
+
+
+
+
+function addNewVacation(){
+   const form = document.querySelector(".add-vacation-form")
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const nameInput = event.target.name.value
+    const imageInput = event.target.image.value
+
+    const newVacation = {
+    name: nameInput,
+    image: imageInput,
+    likes: 0
+    }
+})
+}
 function renderNewDestination(e){
     e.preventDefault();
     const name = document.querySelector("#name-input").value;
@@ -123,6 +133,21 @@ function renderNewDestination(e){
 }
 
 document.getElementById('destination-form').addEventListener('submit', renderNewDestination)
+
+
+
+
+
+
+const likeButton = document.getElementById('#like-button');
+likeButton.addEventListener('click', () => {
+data.likes = data.likes + 1;
+likesLocation.textContent = `${data.likes} likes`;
+})
+let numOfLikes = 0;
+
+
+
 
 
 
