@@ -190,8 +190,6 @@ nav.menu-btn {
     border-radius: 5px;
     border: black solid 1px;
     padding: 1rem;
-    width: 20rem;
-    height: 30rem;
     display: inline-grid;
     margin: -1rem;
     box-shadow: 3px 3px #0606da
@@ -205,8 +203,8 @@ nav.menu-btn {
 .img {
     display: block;
     justify-self: center;
-    height: 30em;
-    width: 30em;
+    height: 15em;
+    width: 15em;
 
 }
 
@@ -218,13 +216,13 @@ section {
 }
 
 p {
-    font-size: 2em;
+    font-size: 1.3em;
     font-style: italic;
     font-weight: bold;;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 1.8em;
     font-style: italic;
     font-weight: bold;
 }
