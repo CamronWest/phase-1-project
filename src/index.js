@@ -1,4 +1,3 @@
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -72,19 +71,10 @@ function renderTravel(cards){
 
 }
 
-        
-
-      
-
-
-
-
-
-
 
 function addNewVacation(){
-   const form = document.querySelector(".add-vacation-form")
-form.addEventListener('submit', (event) => {
+    const form = document.querySelector(".add-vacation-form")
+    form.addEventListener('submit', (event) => {
     event.preventDefault()
     const nameInput = event.target.name.value
     const imageInput = event.target.image.value
@@ -128,7 +118,6 @@ data.likes = data.likes + 1;
 likesLocation.textContent = `${data.likes} likes`;
 })
 let numOfLikes = 0;
-
 
 
 
