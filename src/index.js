@@ -76,8 +76,8 @@ function renderTravel(cards){
         button.className = 'like-button'
         button.addEventListener('click', () => {
             button.textContent = 'LOVED!'
-          })
-          button.addEventListener("click", () => alert('Destination has been added to your Favorites'))
+        })
+        button.addEventListener("click", () => alert('Destination has been added to your Favorites'))
         
     
         const button2 = document.createElement('button')
@@ -85,7 +85,7 @@ function renderTravel(cards){
         button2.className = 'dislike-button'
         button2.addEventListener('click', () => {
             button2.textContent = 'Not my Fave'
-          })
+        })
 
 
 
@@ -146,11 +146,3 @@ document.getElementById('destination-form').addEventListener('submit', renderNew
 
 
 
-
-
-// const likeButton = document.getElementById('#like-button');
-// likeButton.addEventListener('click', () => {
-// data.likes = data.likes + 1;
-// likesLocation.textContent = `${data.likes} likes`;
-// })
-// let numOfLikes = 0;
