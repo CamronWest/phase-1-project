@@ -110,7 +110,7 @@ function renderTravel(cards){
                 body: JSON.stringify({
                     likes: 'NONE'
                 })
-                })
+            })
                 .then(res => res.json())
                 .then((card) => console.log(card.likes))
                 primaryNav.remove(favoritePlace.textContent)
@@ -156,7 +156,7 @@ function renderNewDestination(e){
         restaurant: restaurant,
         hotel: hotel
     };
-
+    
     renderTravel([newDestination])
 }
 
