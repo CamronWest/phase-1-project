@@ -6,7 +6,6 @@ const observer = new IntersectionObserver((entries) => {
         } else {
             entry.target.classList.remove('show');
         }
-
     })
 })
 

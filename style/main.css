@@ -74,13 +74,12 @@ nav {
     display: none;
     position: fixed;
     z-index: 5;
-    width: 17%;
+    width: 15%;
     right: 0;
     top: 0;
     border-radius: 30px;
     background: rgb(46, 43, 43);
-    height: 22vh;
-    height: 18vh;
+    height: 14vh;
     padding: 1em;
     background-color: salmon;
 }
@@ -95,20 +94,28 @@ nav ul.primary-nav {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    letter-spacing: -0.016em;
+    letter-spacing: 0.016em;
     font-weight: 4em;
+    color: black;
+    text-decoration: underline;
+    display: block;
+    padding: .5em;
+    font-size: 1.3em;
+    float: right;
+    margin: auto ;
+    padding: auto;
     
 }
 
 nav li a {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
     display: block;
     padding: .5em;
-    font-size: 1.3em;
-    text-align: right;
-    margin: 0;
-    padding: 0;
+    font-size: 1em;
+    float: right;
+    margin: auto ;
+    padding: auto;
 }
 
 nav li a:hover {
@@ -130,12 +137,12 @@ nav.menu-btn {
 
 .home {
     color: black;
-    text-decoration: none;
+    text-overflow: clip;
     display: block;
     padding: .5em;
     font-size: 1.3em;
-    float: left;
-    margin: .5em;
+    float: inline-start;
+    margin: 0em;
     cursor: pointer;
     
 }
@@ -155,6 +162,7 @@ nav.menu-btn {
 
 #cards {
     margin: 2rem;
+
 }
 
 .card {
@@ -190,11 +198,12 @@ nav.menu-btn {
     border-radius: 5px;
     border: black solid 1px;
     padding: 1rem;
-    width: 20rem;
-    height: 30rem;
     display: inline-grid;
-    margin: -1rem;
-    box-shadow: 3px 3px #0606da
+    margin: 0rem;
+    box-shadow: 3px 3px #0606da;
+    justify-self: center;
+    width: 30em;
+    height: 30em
     
 }
 
@@ -205,8 +214,8 @@ nav.menu-btn {
 .img {
     display: block;
     justify-self: center;
-    height: 30em;
-    width: 30em;
+    height: 15em;
+    width: 15em;
 
 }
 
@@ -218,13 +227,13 @@ section {
 }
 
 p {
-    font-size: 2em;
+    font-size: 1.3em;
     font-style: italic;
     font-weight: bold;;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 1.8em;
     font-style: italic;
     font-weight: bold;
 }
