@@ -200,8 +200,8 @@ nav.menu-btn {
     height: fit-content;
     text-align: center;
     border: black solid 1px;
-    min-width: 100vh;
-    height: 25rem;
+    min-width: 45rem;
+    height: 45rem;
     display: inline-grid;
     margin: 1rem 2rem;
     box-shadow: 3px 4px #e04b52;
@@ -260,6 +260,7 @@ h2 {
     font-size: 1.8em;
     font-style: italic;
     font-weight: bold;
+    font-family:'Oleo Script', cursive;
 }
 
 
@@ -297,16 +298,20 @@ h2 {
   }
   
   .like-button {
-    color: red;
+    color: black;
     font-size: 1rem;
     border: none;
     background: none;
     transition: color 300ms;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 7px;
     height: 3rem;
     width: max-content;
+    background-image:url('https://www.citypng.com/public/uploads/preview/-51611910424xkqacgdj5f.png');
+    background-size: cover;
+    width: 60px;
+    height: 50px;
     
   }
   
@@ -316,7 +321,7 @@ h2 {
   }
   
   .like-button:active {
-    color: rgb(250, 5, 9);
+    color: red
   }
   
   .like-button:focus {
@@ -330,29 +335,31 @@ h2 {
 }
 
 .like-button:active {
-    color: rgb(253, 124, 126);
+    color: black;
 }
 
 .like-button:focus {
     outline: none;
-}
-
+ }
 
 
 
 .dislike-button{
-    color: blue;
+    color: red;
     font-size: 1rem;
     border: none;
     background: none;
     transition: color 300ms;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 7px;
     height: 3rem;
     width: max-content;
     text-align: right;
-    
+    background-image:url('https://t4.ftcdn.net/jpg/01/14/39/43/360_F_114394389_lcGbGz8p8lLuay6A1IBSIx3EzdBWyWAa.jpg');
+    background-size: cover;
+    width: 57px;
+    height: 45px;
 }
 
 

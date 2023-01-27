@@ -72,12 +72,13 @@ function renderTravel(cards){
 
 
         const button = document.createElement('button')
-        button.textContent = 'LOVE'
         button.className = 'like-button'
         button.id = card.id;
 
+       
+    
         const button2 = document.createElement('button')
-        button2.textContent = 'Dislike'
+        button2.textContent = ''
         button2.className = 'dislike-button'
 
         const primaryNav = document.querySelector('.primary-nav')
@@ -87,13 +88,11 @@ function renderTravel(cards){
 
         button.addEventListener('click', function(){
         
-            button.textContent = 'LOVED!'
-            button2.textContent = 'dislike'
             fetch(`http://localhost:3000/Locations/${card.id}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    likes: button.textContent
+                    likes: 'loved'
                 })
         })
         .then(res => res.json())
@@ -104,10 +103,7 @@ function renderTravel(cards){
         primaryNav.appendChild(favoritePlace)
 
     }) 
-        button2.addEventListener('click', function(){
-        
-            button2.textContent = 'Not my Fave'
-            button.textContent = 'LOVE'        
+        button2.addEventListener('click', function(){        
                 fetch(`http://localhost:3000/Locations/${card.id}`, {
                     method: 'PATCH',
                     headers: { 'Content-Type': 'application/json' },
@@ -165,8 +161,6 @@ function renderNewDestination(e){
 }
 
 document.getElementById('destination-form').addEventListener('submit', renderNewDestination)
-
-
 
 
 
