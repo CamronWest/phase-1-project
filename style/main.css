@@ -176,8 +176,8 @@ nav.menu-btn {
     height: fit-content;
     text-align: center;
     border: black solid 1px;
-    min-width: 100vh;
-    height: 25rem;
+    min-width: 45rem;
+    height: 45rem;
     display: inline-grid;
     margin: 1rem 2rem;
     box-shadow: 3px 4px #e04b52;
@@ -236,6 +236,7 @@ h2 {
     font-size: 1.8em;
     font-style: italic;
     font-weight: bold;
+    font-family:'Oleo Script', cursive;
 }
 
 
@@ -280,7 +281,7 @@ h2 {
     transition: color 300ms;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 7px;
     height: 3rem;
     width: max-content;
     
@@ -323,7 +324,7 @@ h2 {
     transition: color 300ms;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 7px;
     height: 3rem;
     width: max-content;
     text-align: right;

@@ -135,13 +135,5 @@ document.getElementById('destination-form').addEventListener('submit', renderNew
 
 
 
-// const likeButton = document.getElementById('#like-button');
-// likeButton.addEventListener('click', () => {
-// data.likes = data.likes + 1;
-// likesLocation.textContent = `${data.likes} likes`;
-// })
-// let numOfLikes = 0;
-
-
 
 
