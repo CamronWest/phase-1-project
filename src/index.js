@@ -71,19 +71,18 @@ function renderTravel(cards){
         p3.textContent = `Favorite Restaurant: ${card.restaurant}`
 
         const button = document.createElement('button')
-        button.textContent = 'LOVE'
         button.className = 'like-button'
         button.addEventListener('click', () => {
-            button.textContent = 'LOVED!'
+            button.textContent = 'Loved'
         })
         button.addEventListener("click", () => alert('Destination has been added to your Favorites'))
         
     
         const button2 = document.createElement('button')
-        button2.textContent = 'Dislike'
+        button2.textContent = ''
         button2.className = 'dislike-button'
         button2.addEventListener('click', () => {
-            button2.textContent = 'Not my Fave'
+            button2.textContent = 'Dislike'
         })
 
 
