@@ -32,13 +32,12 @@ function navbarButton(){
 }
 navbarButton();
 
-fetch('http://localhost:3000/domestic')
+fetch('http://localhost:3000/Locations')
 .then(res => res.json())
 .then(data => renderTravel(data));
 
-fetch ('http://localhost:3000/international')
-.then(res => res.json())
-.then(data => renderTravel(data));
+
+
 
 
 let num = 1;
@@ -46,7 +45,8 @@ let num = 1;
 function renderTravel(cards){
     cards.forEach((card) => {
         const cardsList = document.querySelector('#cards')
-        var info = document.createElement('div')
+        const info = document.createElement('div')
+        
         info.id = `card-${num}`
         info.className = 'card'
         num++;
@@ -70,27 +70,60 @@ function renderTravel(cards){
         const p3 = document.createElement('p')
         p3.textContent = `Favorite Restaurant: ${card.restaurant}`
 
+
         const button = document.createElement('button')
         button.className = 'like-button'
-        button.addEventListener('click', () => {
-            button.textContent = 'Loved'
-        })
-        button.addEventListener("click", () => alert('Destination has been added to your Favorites'))
-        
+        button.id = card.id;
+
+       
     
         const button2 = document.createElement('button')
         button2.textContent = ''
         button2.className = 'dislike-button'
-        button2.addEventListener('click', () => {
-            button2.textContent = 'Dislike'
+
+        const primaryNav = document.querySelector('.primary-nav')
+        const favoritePlace = document.createElement('li')
+        
+
+
+        button.addEventListener('click', function(){
+        
+            fetch(`http://localhost:3000/Locations/${card.id}`, {
+                method: 'PATCH',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    likes: 'loved'
+                })
         })
+        .then(res => res.json())
+        .then(card => console.log(card.likes))
+        const favoritePlace = document.createElement('li')
+        favoritePlace.textContent = h2.textContent
+        favoritePlace.className = 'favorite-place'
+        primaryNav.appendChild(favoritePlace)
 
-
-
+    }) 
+        button2.addEventListener('click', function(){        
+                fetch(`http://localhost:3000/Locations/${card.id}`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    likes: 'NONE'
+                })
+                })
+                .then(res => res.json())
+                .then((card) => console.log(card.likes))
+                primaryNav.remove(favoritePlace.textContent)
+                
+        })
+             
+        button.addEventListener("click", () => alert('Destination has been added to your Favorites'))
+        button2.addEventListener("click", () => alert('Destination has been removed from your Favorites'))
+        
         info.append(h2, img, p, p2, p3, button, button2)
         cardsList.append(info)
-    }
-    )}
+    })
+}
 
 
 function addNewVacation(){

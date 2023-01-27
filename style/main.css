@@ -79,7 +79,7 @@ nav {
     top: 0;
     border-radius: 30px;
     background: rgb(46, 43, 43);
-    height: 14vh;
+    height: 65vh;
     padding: 1em;
     background-color: salmon;
 }
@@ -101,15 +101,39 @@ nav ul.primary-nav {
     display: block;
     padding: .5em;
     font-size: 1.3em;
-    float: right;
+    float: left;
     margin: auto ;
     padding: auto;
     
 }
 
-nav li a {
+
+
+.favorites .primary-nav{
+    margin-top: 5em;
+    list-style: none;
+    display: block;
+    line-height: 44px;
+    padding: 0 28px;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0.016em;
+    font-weight: 4em;
     color: black;
     text-decoration: underline;
+    display: block;
+    padding: .5em;
+    font-size: 1.3em;
+    float: left;
+    margin: auto ;
+    padding: auto;
+}
+
+.favorite-place .primary-nav {
+    color: black;
+    font-weight: bolder;
     display: block;
     padding: .5em;
     font-size: 1em;
